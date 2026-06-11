@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MC LEGACY</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#f4f4f4;color:#333}
+
+header{
+background:#111;
+color:white;
+padding:15px 40px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#c9a227;
+}
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.menu a:hover{
+color:#c9a227;
+}
+
+.hero{
+margin-top:80px;
+background:linear-gradient(135deg,#0d0d0d,#1b1b1b,#2a2a2a);
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero img{
+max-width:700px;
+width:90%;
+margin-bottom:30px;
+}
+
+.hero-content p{
+font-size:24px;
+max-width:800px;
+margin:auto;
+}
+
+.buttons{
+margin-top:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+background:#c9a227;
+color:#000;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#e0bb3f;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+color:#222;
+}
+
+.cards,.team,.trabajos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card,.member,.trabajo-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card i{
+font-size:40px;
+color:#c9a227;
+margin-bottom:15px;
+}
+
+.member{text-align:center}
+
+.trabajo-card h3{
+color:#111;
+margin-bottom:10px;
+}
+
+.qr{
+max-width:220px;
+width:100%;
+margin-top:15px;
+}
+
+.contacto{
+background:#111;
+color:white;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.contact-box{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:10px;
+}
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:15px;
+}
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+.menu{display:none;}
+.hero-content p{font-size:20px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">MC LEGACY</div>
+
+<div class="menu">
+<a href="#nosotros">Nosotros</a>
+<a href="#equipo">Equipo</a>
+<a href="#trabajos">Trabajos Realizados</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+
+<img src="logo-mclegacy.jpg" alt="Logo MC Legacy">
+
+<p>
+Auditoría, Consultoría y Asesoramiento Empresarial
+</p>
+
+<div class="buttons">
+<a href="#nosotros" class="btn">Conócenos</a>
+<a href="#trabajos" class="btn">Trabajos Realizados</a>
+</div>
+
+</div>
+</section>
+
+<section id="nosotros">
+<h2 class="section-title">Nuestra Firma</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fas fa-landmark"></i>
+<h3>Historia</h3>
+<p>MC LEGACY brinda servicios profesionales de auditoría, consultoría y asesoramiento empresarial.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-bullseye"></i>
+<h3>Misión</h3>
+<p>Brindar soluciones confiables y de alta calidad para fortalecer la gestión empresarial.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-eye"></i>
+<h3>Visión</h3>
+<p>Ser una firma líder reconocida por su excelencia, ética y profesionalismo.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-handshake"></i>
+<h3>Valores</h3>
+<p>Integridad, compromiso, independencia, transparencia y calidad profesional.</p>
+</div>
+
+</div>
+</section>
+
+<section id="equipo">
+<h2 class="section-title">Equipo Profesional</h2>
+
+<div class="team">
+
+<div class="member">
+<h3>Lic. Aud. Ricardo Delgadillo Mercado</h3>
+<p style="color:#c9a227; font-weight:bold; margin-top:5px;">Director U.A.F.</p>
+</div>
+
+<div class="member">
+<h3>Lic. CPA. Marco Antonio Escobar Lima</h3>
+<p style="color:#c9a227; font-weight:bold; margin-top:5px;">Gerente de Auditoría</p>
+</div>
+
+<div class="member">
+<h3>Lic. CPA. Rene Ariel Corino Velasco</h3>
+<p style="color:#c9a227; font-weight:bold; margin-top:5px;">Supervisor</p>
+</div>
+
+<div class="member">
+<h3>Lic. CPA. Kevin Nelson Espinoza Yapuchura</h3>
+<p style="color:#c9a227; font-weight:bold; margin-top:5px;">Auditor I</p>
+</div>
+
+<div class="member">
+<h3>Lic. CPA. Beltran Alfredo Cuba Calderon</h3>
+<p style="color:#c9a227; font-weight:bold; margin-top:5px;">Auditor II</p>
+</div>
+
+<div class="member">
+<h3>Lic. CPA. Lia Denisse Torrez Espinoza</h3>
+<p style="color:#c9a227; font-weight:bold; margin-top:5px;">Auditor III</p>
+</div>
+
+</div>
+</section>
+
+<section id="trabajos">
+<h2 class="section-title">Trabajos Realizados</h2>
+
+<div class="trabajos">
+
+<div class="trabajo-card">
+<h3>DISMATEC</h3>
+<p>Empresa auditada.</p>
+<img src="qr-dismatec.png" alt="QR DISMATEC" class="qr">
+</div>
+
+<div class="trabajo-card">
+<h3>INDUSTRIAS ANDINAS S.R.L.</h3>
+<p>Empresa auditada.</p>
+</div>
+
+<div class="trabajo-card">
+<h3>COMERCIAL BOLIVIANA LTDA.</h3>
+<p>Empresa auditada.</p>
+</div>
+
+</div>
+</section>
+
+<section class="contacto" id="contacto">
+
+<h2 class="section-title" style="color:white;">Información General</h2>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+<h3>Datos de Contacto</h3><br>
+<p><b>Dirección:</b> La Paz, Bolivia</p><br>
+<p><b>Teléfono:</b> +591 XXXXXXXX</p><br>
+<p><b>Correo:</b> contacto@mclegacy.com</p><br>
+<p><b>Horario:</b> Lunes a Viernes</p>
+<p>08:00 - 12:00</p>
+<p>14:00 - 18:00</p>
+</div>
+
+<div>
+<iframe src="https://maps.google.com/maps?q=La%20Paz&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 MC LEGACY | Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
